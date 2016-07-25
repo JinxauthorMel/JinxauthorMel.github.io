@@ -364,12 +364,12 @@
                 var e = window.event || e; // old IE support
                 var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
 
-                if (delta > 0)
+                if (delta > 0 && mapScale < 1.5)
                 {
                     mapScale += .05;
                     document.cookie = "spon2007_mapScale=" + mapScale;
                 }
-                else if (delta < 0)
+                else if (delta < 0 && mapScale > 0.35)
                 {
                     mapScale -= .05;
                     document.cookie = "spon2007_mapScale=" + mapScale;
