@@ -128,7 +128,7 @@
                 "N38": ["Helipad",                              [100, 520],     "E",   "nether road to Seishin Emporium and Seishin Cave (Rail #0)"],
                 "N39": ["Guardian Farm",                        [100,630],      "E",    "public access (Rail #0)"],
                 "N40": ["Zapadnyi Krest",                       [100, 690],     "E",   "(Rail #0)"],
-                "N41": ["Yetisert",                             [600, 530],     "E",   "(Rail #0)"]
+                "N41": ["Yetisert",                             [600, 530],     "E",   "(Rail #0)"],
                 "N42": ["Brazil Cooperation",                   [1125, 710],    "N",    "(Rail #0)"],
                 "N43": ["New Braziltown",                       [1300, 710],    "N",    "(Rail #0)"],
                 "N44": ["Aliskander's Place",                   [415, 1280],    "S",    "(Rail #0)"],
@@ -136,7 +136,7 @@
                 "N46": ["Anhud's Scrapyard",                    [240, 1280],    "W",    "transfer station to Extension Tracks (Rail #0)"],
                 "N47": ["Tollan (Ēxcān Bastet)",                [330, 1600],    "W",    "(subject to unpredictable name changes) (Rail #0)"],
                 "N48": ["Skellsborough (Skellie Farms)",        [1125, 1170],   "W",    "nether road to Oppai Islands, Rotten Mansion and Zweiyurten portals (Rail #0)"],
-                "N49": ["Paizuri Plains",                       [1310, 1170]],  "E",   "(Rail #0)"],
+                "N49": ["Paizuri Plains",                       [1310, 1170],   "E",   "(Rail #0)"],
                 "N50": ["Yagira Falls",                         [1125, 1340],   "W",    "also access to Graenland portal (Rail #0)"],
                 "N51": ["Prystanak",                            [1050, 1550],   "N",    "(Rail #0)"],
                 "O00": ["Old Spawn Netherhub",                  [550,  1050],   "C",    ""],
@@ -368,12 +368,12 @@
                 var e = window.event || e; // old IE support
                 var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
 
-                if (delta > 0)
+                if (delta > 0 && mapScale < 1.5)
                 {
                     mapScale += .05;
                     document.cookie = "spon2007_mapScale=" + mapScale;
                 }
-                else if (delta < 0)
+                else if (delta < 0 && mapScale > 0.35)
                 {
                     mapScale -= .05;
                     document.cookie = "spon2007_mapScale=" + mapScale;
