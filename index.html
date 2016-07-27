@@ -73,6 +73,7 @@
                 "N17'": ["",                                    [1440, 1560],    "",   ""],
                 "E03": ["Faryagrad",                            [235, 1330],    "W",    "transfer station to NEAR Transprts"],
                 "E04": ["Perdyushino",                          [235, 1135],    "N",    "transfer station to Old Spawn Network"],
+
                 "H00": ["HDC Netherhub",                        [750, 940],     "C",    "a.k.a. 'Confederation Hub' or 'Wyventon Hub' (Rail #1)"],
                 "H01": ["Højborgen",                            [725, 1050],    "W",    "End Portal Stronghold"],
                 "H02": ["Nova Bydlograd (Breshik)",             [825, 900],     "S",   "secondary hub"],
@@ -87,6 +88,7 @@
                 "H11": ["Walschor",                             [495, 1690],    "NE",   "transfer station to Alpha Spawn Network"],
                 "H12": ["Oasis",                                [1030, 1645],   "NW",   ""],
                 "H13": ["Ostrow",                               [1220, 1610],   "N",    "industrial line only"],
+
                 "N00": ["Utgard Station",                       [1125, 1000],   "C",    "portal to Midgard Municipality (Rail #0)"],
                 "N01": ["West Sorra",                           [1020, 1000],   "SE",    "switch station (Rail #0)"],
                 "N02": ["Badforest (Badfacia)",                 [890, 1000],    "N",    "transfer station to HDC Network (Rail #0)"],
@@ -139,13 +141,14 @@
                 "N49": ["Paizuri Plains",                       [1310, 1170],   "E",   "(Rail #0)"],
                 "N50": ["Yagira Falls",                         [1125, 1340],   "W",    "also access to Graenland portal (Rail #0)"],
                 "N51": ["Prystanak",                            [1050, 1550],   "N",    "(Rail #0)"],
+
                 "O00": ["Old Spawn Netherhub",                  [540, 1050],   "C",    ""],
                 "O01": ["Desert End Portal",                    [570, 875],     "W",    "two lines to same station, transfer station to Xpeh Lines, no access to surface"],
                 "O01'": ["",                                    [565, 875],     "",     ""],
                 "O02": ["Taushahar",                            [445, 700],     "NE",   "transfer station to Xpeh Lines"],
                 "O02'": ["",                                    [435, 705],     "",     ""],
                 "O03": ["(switch point 'GideonSpire's desert')",[540, 905],     "SW",   "portal disabled"],
-                "O04": ["Adschmann Al-Ilol",                    [585, 875],     "NE",   ""],
+                "O04": ["Adschmann Al-Ilol",                    [585, 875],     "E",   ""],
                 "O05": ["Mozzarabia",                           [360, 875],     "N",    ""],
                 "O06": ["Barasuishou / Ueban Oblast",           [860, 845],     "NW",   ""],
                 "O07": ["Blaze Farm",                           [1230, 565],    "N",    "transfer station to NEAR Transports, access to Explorers' Gate 06"],
@@ -158,6 +161,7 @@
                 "O13": ["Hinoarashington",                      [505, 1100],    "S",   "overworld: road to Leninstadt"],
                 "O14": ["Techtopia",                            [295, 1130],    "N",    "transfer station to Extension Tracks"],
                 "O15": ["Elkkuton",                             [600, 940],     "E",    "also access to Tangtown"],
+
                 "X01": ["Xpeh_wam's Village",                   [760, 705],     "NW",   "designed as future hub, transfer station to HDC Network"],
                 "X01'": ["",                                    [765, 705],     "",     ""],
                 "X02": ["Socier",                               [375, 1705],    "E",    ""],
@@ -188,13 +192,13 @@
 
                 ["A01", "A00", "A", "corner"],
                 ["A01", "A02", "A"],
-                ["A02", "A03", "A"],
+                ["A02", "A03", "A", "corner"],
 
                 ["A07", "A00", "A", "corner"],
                 ["A06", "A00", "A", "corner"],
                 ["A06", "O01", "A"],
                 ["A08", "A00", "A", "corner"],                
-                ["A00", "A04", "A"],
+                ["A04", "A00", "A", "corner"],
                 ["A04", "A05", "A"],
                 
                 ["A20", "A00", "A", "corner"],
@@ -293,9 +297,9 @@
                 ["O08", "O09", "O", "corner"],
                 ["O02", "O00", "O", "corner"],
                 ["O00", "O03", "O"],
-                ["O03", "O04", "O"],
-                ["O03", "O05", "O"],
-                ["O00", "O15", "O"],
+                ["O04", "O03", "O", "corner"],
+                ["O05", "O03", "O", "corner"],
+                ["O15", "O00", "O", "corner"],
 
                 ["X01", "O10'", "X", "corner"],
                 ["O10'", "O02'", "X", "corner"],
