@@ -78,7 +78,7 @@
                 "H01": ["Højborgen",                            [725, 1050],    "W",    "End Portal Stronghold"],
                 "H02": ["Nova Bydlograd (Breshik)",             [825, 900],     "S",   "secondary hub"],
                 "H03": ["Mining Facility / Archipalegia",       [1050, 860],    "E",    ""],
-                "H04": ["Hosanna",                              [965, 840],     "S",    ""],
+                "H04": ["Hosanna",                              [965, 840],     "N",    ""],
                 "H05": ["Tur-del-Achbad",                       [670, 805],     "N",    ""],
                 "H06": ["Badforest (Badfacia)",                 [890, 1020],    "E",    "transfer station to NEAR Transports"],
                 "H07": ["Midway Fortress",                      [1325, 640],    "S",    "no portal station"],
@@ -142,7 +142,7 @@
                 "N50": ["Yagira Falls",                         [1125, 1340],   "W",    "also access to Graenland portal (Rail #0)"],
                 "N51": ["Prystanak",                            [1050, 1550],   "N",    "(Rail #0)"],
 
-                "O00": ["Old Spawn Netherhub",                  [540, 1050],   "C",    ""],
+                "O00": ["Old Spawn Netherhub",                  [540, 1050],    "C",    ""],
                 "O01": ["Desert End Portal",                    [570, 875],     "W",    "two lines to same station, transfer station to Xpeh Lines, no access to surface"],
                 "O01'": ["",                                    [565, 875],     "",     ""],
                 "O02": ["Taushahar",                            [445, 700],     "NE",   "transfer station to Xpeh Lines"],
@@ -210,7 +210,7 @@
                 ["E02", "N17'","E", "corner"],
                 ["E03", "E04", "E"],                
 
-                ["H00", "H09", "H", "corner"],
+                ["H09", "H00", "H", "corner"],
                 ["H09", "H10", "H"],
                 ["H10", "H11", "H", "corner"],
                 ["H10", "H12", "H", "corner"],
@@ -218,13 +218,13 @@
                 ["H00", "H06", "H", "corner"],
                 ["H00", "H01", "H", "corner"],
                 ["H00", "A00.9", "A", "corner"],
-                ["H00", "H05", "H"],
+                ["H05", "H05", "H", "corner"],
                 ["H00", "X01'", "H", "corner"],
                 ["X01'","H07", "H", "corner"],
                 ["H08", "H07", "H", "corner"],
-                ["H02", "H03", "H"],                
-                ["H00", "H02", "H"],
-                ["H02", "H04", "H"],
+                ["H02", "H03", "H", "corner"],                
+                ["H02", "H00", "H", "corner"],
+                ["H04", "H02", "H", "corner"],
 
                 ["N21", "N00", "N"],                
                 ["N21", "N22", "N"],
@@ -814,7 +814,7 @@
 
                 ctx.fillStyle = "white"
                 ctx.fillText("Last update: " + lastUpdate.getFullYear() + "-" +
-                                               monthes[lastUpdate.getMonth()] + "-" +
+                                               monthes[lastUpdate.getMonth() - 1] + "-" +
                                                lastUpdate.getDate(),
                              10,
                              canvasHeight - 30)
