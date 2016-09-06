@@ -175,8 +175,8 @@
                 "X02": ["Socier",                               [375, 1705],    "E",    ""],
                 "X03": ["Wamfarm",                              [320, 1740],    "W",    "Xpeh_wam's Prismarine Farm, no surface access"],
             };
-            var edges = [
 
+            var edges = [
                 ["A00", "A22", "A"],
                 ["A22", "A23", "A"],
                 ["A22", "A24", "A"],
@@ -366,6 +366,182 @@
                             "O": ["Old Spawn Network",   "#ed1c24"],
                             "X": ["Xpeh Lines",          "#ff7f27"]};
 
+
+            var edgeCosts = [
+                ["A00", "A22", 31],
+                ["A22", "A23", 12],
+                ["A22", "A24", 20],
+                ["A24", "A22", 24],
+                ["A24", "A25", 10],
+                ["A25", "A26", 10],
+                ["A26", "A27", 20],
+                ["A27", "A28", 12],
+                ["A28", "A29", 37],
+                ["A31", "A00", 42],
+                ["A09", "A00", 35],
+                ["A14", "A00", 61],
+                ["A00", "A14", 68],
+                ["A00", "A30", 145],
+                ["A12", "A00", 23],
+                ["A13", "A00", 40],
+                ["A15", "A00", 69],
+                ["A00", "A15", 64],
+                ["A15", "A16", 57],
+                ["A15", "A17", 9],
+                ["A17", "A18", 14],
+                ["A18'","A19", 32],
+                ["A01", "A00", 74],
+                ["A01", "A02", 15],
+                ["A02", "A03", 15],
+                ["A07", "A00", 178],
+                ["A06", "A00", 56],
+                ["A06", "O01", 24],
+                ["O01", "A06", 26],
+                ["A08", "A00", 44],
+                ["A04", "A00", 21],
+                ["A04", "A05", 20],
+                ["A05", "A04", 23],
+                ["A20", "A00", 101],
+                ["A20", "A21", 12],
+                ["A10", "A00", 18],
+                ["A11", "A00", 93],
+                ["A28'", "E01", 9],
+                ["E01", "E02", 14],
+                ["A30", "N17'", 15],
+                ["E03", "E04", 25],
+                ["O08'", "E05", 77],
+                ["A16'", "E06", 28],
+                ["E07", "H01'", 18],
+                ["H09", "H00", 86],
+                ["H09", "H10", 11],
+                ["H10", "H11", 42],
+                ["H10", "H12", 34],
+                ["H13", "H12", 30],
+                ["H00", "H06", 36],
+                ["H00", "H01", 29],
+                ["H00", "A00.9", 67],
+                ["H05", "H00", 33],
+                ["H00", "X01'", 46],
+                ["X01'","H07", 80],
+                ["H08", "H07", 52],
+                ["H04", "H02", 69],
+                ["H02", "H04", 90],
+                ["H00", "H02", 15],
+                ["H02", "H03", 41],
+                ["H03", "H02", 39],
+                ["N21", "N00", 24],
+                ["N21", "N22", 37],
+                ["N22", "N23", 12],
+                ["N23", "N24", 21],
+                ["N24", "N25", 13],
+                ["N25", "N26", 12],
+                ["N26", "N27", 11],
+                ["N26", "N28", 19],
+                ["N28", "N29", 6],
+                ["N29", "N30", 13],
+                ["N30", "N31", 17],
+                ["N31", "N32", 19],
+                ["N32", "N33", 11],
+                ["N33", "N34", 27],
+                ["N34", "N41", 7],
+                ["N34", "N35", 24], 
+                ["N35", "N36", 21],
+                ["N36", "N37", 22],
+                ["N37", "N38", 8],
+                ["N37", "N39", 9],
+                ["N39", "N40", 8],
+                ["N00", "N48", 23],
+                ["N48", "N49", 27],
+                ["N49", "N48", 25],
+                ["N48", "N12", 14],
+                ["N12", "N50", 13],
+                ["N50", "N51", 37],
+                ["N00", "N01", 14],
+                ["N01", "N00", 16],
+                ["N01", "N02", 18],
+                ["N02", "N03", 8],
+                ["N03", "N04", 12],
+                ["N04", "N05", 8],
+                ["N04", "A00'", 38],
+                ["N01", "N06", 5],
+                ["N06", "N07", 10],
+                ["N07", "N08", 10],
+                ["N08", "N09", 7],
+                ["N09", "N10", 14],
+                ["N10", "N31", 16],
+                ["A00'", "N11", 37],
+                ["N11", "N12", 21],
+                ["N12", "N13", 8],
+                ["N13", "N14", 15],
+                ["N14", "N15", 20],
+                ["N15", "N16", 23],
+                ["N16", "N17", 18],
+                ["N17", "N18", 33],
+                ["N18", "N19", 21],
+                ["N19", "N20", 16],
+                ["N20", "N19", 13],
+                ["N42", "N00", 36],
+                ["N42", "N43", 24],
+                ["A00'", "N44", 40],
+                ["N44", "N45", 12],
+                ["N45", "N46", 13],
+                ["N45", "N47", 42],
+                ["O00", "O01", 20],
+                ["O01'", "O10", 21],
+                ["O11", "O12", 51],
+                ["O06", "O00", 67],
+                ["O00", "O06", 65],
+                ["O06", "O07", 83],
+                ["O07", "O06", 91],
+                ["O00", "O14", 43],
+                ["O00", "O13", 14],
+                ["O08", "O00", 35],
+                ["O00", "O08", 37],
+                ["O08", "O09", 29],
+                ["O09", "O08", 27],
+                ["O02", "O00", 60],
+                ["O00", "O03", 17],
+                ["O04", "O03", 10],
+                ["O05", "O03", 27],
+                ["O15", "O00", 33],
+                ["O00", "O15", 36],
+                ["X01", "O10'", 39],
+                ["O10'", "O02'", 17],
+                ["N45", "O02'", 88],
+                ["X02", "N47", 20],
+                ["X02", "X03", 14],
+                ["X03", "A18", 46],
+            ];
+
+            var transferCosts = [
+                ["A00", "A00'", 60],
+                ["A02", "H11", 20],
+                ["A06", "O00.0", 16],
+                ["A09", "H09", 9],
+                ["A11", "N08", 18],
+                ["N08", "A11", 20],
+                ["A16", "A16'", 5],
+                ["A18", "A18'", 8],
+                ["A20", "N33", 15],
+                ["A23", "N11", 11],
+                ["A25", "N13", 12],
+                ["A28", "A28'", 6],
+                ["E03", "N46", 19],
+                ["E04", "O14", 20],
+                ["H00.3", "N05", 15],
+                ["H01", "H01'", 10],
+                ["H06", "N02", 10],
+                ["N17", "N17'", 10],
+                ["N29", "O07", 16],
+                ["O01", "O01'", 7],
+                ["O02", "O02'", 6],
+                ["O08", "O08'", 12],
+                ["O10", "O10'", 8],
+                ["O10", "O11", 27],
+                ["O11", "O10", 30],
+                ["X01", "X01'", 6],
+            ];
+
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             var isDragging = false;
@@ -385,6 +561,9 @@
             var selectedRoute = []
             var selectedEdges = []
             var click
+            var nodeToNodeTime = {}
+            var filterText = ""
+            var filterNodes = []
 
             var canvas = document.getElementById("myCanvas");
 
@@ -473,6 +652,26 @@
                 }
             }
 
+            function selectMatchedNodes(filter)
+            {
+                var result = []
+                var f = filter.trim().toLowerCase()
+                if (f.length > 0)
+                {
+                    for(var i in nodes)
+                    {
+                        var node = nodes[i];
+                        if (i.toLowerCase().indexOf(f) !== -1 ||
+                            node[0].toLowerCase().indexOf(f) !== -1 ||
+                            node[3].toLowerCase().indexOf(f) !== -1)
+                        {
+                            result.push(i);
+                        }
+                    }
+                }
+                return result
+            }
+
             function procKeyPress(e)
             {
                 switch(e.keyCode)
@@ -481,9 +680,23 @@
                         xOffset = 0
                         yOffset = 0
                         mapScale = 1.0
+                        filterText = ""
                         document.cookie = "spon2007_xOffset=" + xOffset;
                         document.cookie = "spon2007_yOffset=" + yOffset;
                         document.cookie = "spon2007_mapScale=" + mapScale;
+                        break;
+
+                    case 8:
+                        if (filterText.length > 0)
+                        {
+                            filterText = filterText.substring(0, filterText.length - 1);
+                            filterNodes = selectMatchedNodes(filterText);
+                        }
+                        break;
+
+                    default:
+                        filterText += String.fromCharCode(e.keyCode || e.charCode);
+                        filterNodes = selectMatchedNodes(filterText);
                         break;
                 }
             }
@@ -552,6 +765,17 @@
             function magnitude(x0, y0, x1, y1)
             {
                 return Math.sqrt(Math.pow(x0 - x1, 2) + Math.pow(y0 - y1, 2))
+            }
+
+            function addLeadingZero(number)
+            {
+                return number > 9 ? number : "0" + number;
+            }
+
+            function secondsToHumanReadable(seconds)
+            {
+                var minutes = Math.floor(seconds / 60);
+                return addLeadingZero(minutes) + ":" + addLeadingZero(seconds - minutes * 60);
             }
 
             function drawLabel(ctx, text, centerX, centerY, radius, style, placement, margin = 4)
@@ -706,8 +930,9 @@
                     var centerY = node[1][1];
                     var lineInfo = prefixes[i[0]]
 
-                    ctx.font = i === hoveredNode || i === startNode || i === endNode ? "bold 16px monospace"
-                                                                                     : "16px monospace";
+                    ctx.font = i === hoveredNode || i === startNode || i === endNode || filterNodes.indexOf(i) !== -1
+                             ? "bold 20px monospace"
+                             : "16px monospace";
 
                     var nodeInRoute = (selectedRoute.indexOf(i) !== -1)
                     var paintLabel = selectedRoute.length === 0 || nodeInRoute
@@ -788,6 +1013,7 @@
 
                     // TODO: don't calc it every frame
                     var routeToText = []
+                    var totalTravelTime = 0;
                     for(var i = 0; i < selectedRoute.length; ++i)
                     {
                         var nodeName = selectedRoute[i]
@@ -795,21 +1021,45 @@
                         if (n[0].length > 0)
                         {
                             routeToText.push([n[0] + " (" + nodeName + ")", prefixes[nodeName[0]][1]])
-                            routeToText.push(["⇣", "#C3D9FF"])
+                        }
+
+                        if (i + 1 < selectedRoute.length)
+                        {
+                            var nextNode = selectedRoute[i + 1];
+                            var key = nodeName + '-' + nextNode;
+                            var cost = nodeToNodeTime[key]
+                            if (cost > 0)
+                            {
+                                routeToText.push(["⇣", "#C3D9FF", secondsToHumanReadable(cost)])
+                                totalTravelTime += cost;
+                            }
                         }
                     }
-                    routeToText.pop()
 
                     var yRoute = 5
-                    ctx.font = "13px Tahoma";
-                    ctx.textAlign = "center"
                     ctx.textBaseline = "top"
+                    ctx.textAlign = "center"
                     for(var i in routeToText)
                     {
+                        ctx.font = "13px Tahoma";
                         ctx.fillStyle = routeToText[i][1]
                         ctx.fillText(routeToText[i][0], canvasWidth - 300/2, yRoute)
+                        if (routeToText[i].length > 2)
+                        {
+                            ctx.font = "11px Tahoma";
+                            ctx.fillStyle = routeToText[i][1]
+                            ctx.fillText(routeToText[i][2], canvasWidth - 300/4, yRoute + 2)
+                        }
                         yRoute += 15
                     }
+
+                    ctx.textBaseline = "top"
+                    ctx.textAlign = "left"
+                    ctx.font = "13px Tahoma";
+                    ctx.fillStyle = "white"
+                    ctx.fillText("Overal travel time ~ " + secondsToHumanReadable(totalTravelTime),
+                                 canvasWidth - 300 + 10,
+                                 yRoute + 15)
                 }
 
                 // Legend
@@ -828,6 +1078,38 @@
                     var prefix = prefixes[i]
                     ctx.fillStyle = prefix[1]
                     ctx.fillText(i + " = " + prefix[0], 10, yPos)
+                }
+
+                ctx.fillStyle = "white"
+                ctx.fillText("Search:", 10, yPos+27)
+                ctx.fillText(filterText, 75, yPos+27)
+                var filterTextWidth = ctx.measureText(filterText).width
+
+                ctx.lineWidth = 1
+                ctx.beginPath();
+                ctx.moveTo(75, yPos + 43);
+                ctx.lineTo(75 + filterTextWidth, yPos + 43);
+
+                if (frameNum % 10 < 5)
+                {
+                    ctx.moveTo(75 + filterTextWidth + 5, yPos + 27);
+                    ctx.lineTo(75 + filterTextWidth + 5, yPos + 41);
+                }
+
+                ctx.strokeStyle = "white";
+                ctx.stroke();
+
+                for(var z in filterNodes)
+                {
+                    var n = filterNodes[z]
+                    var name = nodes[n][0];
+                    if (name.length > 0)
+                    {
+                        yPos += 17;
+                        var pfx = prefixes[n[0]]
+                        ctx.fillStyle = pfx[1]
+                        ctx.fillText(n + ": " + name, 75, yPos+30)
+                    }
                 }
 
                 ctx.fillStyle = "white"
@@ -919,23 +1201,30 @@
 
             function __routeCost(route)
             {
-                // TODO: less transitions
-                // TODO: don't count hub pads
-                // TODO: take real length into account
-                return route.length
+                // TODO: best route - route with less transitions
+                var time = 0;
+                for(var i = 0; i < route.length - 1; ++i)
+                {
+                    var cost = nodeToNodeTime[route[i] + '-' + route[i + 1]]
+                    if (cost !== null && cost !== undefined && cost > 0)
+                    {
+                        time += cost;
+                    }
+                }
+                return time;
             }
 
             function findRoute(src, dst)
             {
                 var begin = (new Date).getTime();
-                var result = __findRoute([src], dst, []);
+                var result = __findRoute([src], dst, [], null);
                 var end = (new Date).getTime();
 
                 console.log("found best route from " + src + " to " + dst + " by " + ((end - begin)/1000) + " msec");
                 return result;
             }
 
-            function __findRoute(currentRoute, dst, bestRoute)
+            function __findRoute(currentRoute, dst, bestRoute, bestCost)
             {
                 var currentNode = currentRoute[currentRoute.length - 1]
                 var sublings = __findSiblings(currentNode, currentRoute);                
@@ -959,6 +1248,7 @@
                 // try each closes node
 
                 var theBestRoute = bestRoute
+                var theBestCost = bestCost
                 for(var i in sublings)
                 {
                     var subling = sublings[i]
@@ -966,11 +1256,9 @@
                     {
                         var route = currentRoute.concat([subling])
                         var routeCost = __routeCost(route)
-                        var bestCost = theBestRoute.length > 0 ? __routeCost(theBestRoute) // TODO: don't recalt cost all the time
-                                                               : null
 
                         // continue search or current route is too costy?
-                        if (bestCost === null || bestCost > routeCost)
+                        if (theBestCost === null || theBestCost > routeCost)
                         {
                             if (route[route.length - 1] === dst)
                             {
@@ -978,10 +1266,11 @@
                             }
                             else
                             {
-                                var result = __findRoute(route, dst, theBestRoute)
+                                var result = __findRoute(route, dst, theBestRoute, theBestCost);
                                 if (result.length > 0)
                                 {
                                     theBestRoute = result;
+                                    theBestCost = __routeCost(theBestRoute);
                                 }
                             }
                         }
@@ -989,6 +1278,16 @@
                 }
 
                 return theBestRoute
+            }
+
+            function isHubPad(node)
+            {
+                return (node in hubsPads) && !(node in hubs);
+            }
+
+            function hubOfPad(node)
+            {
+                return hubsPads[node][0]
             }
 
             function main()
@@ -1125,6 +1424,107 @@
                     transferLines.push([begin, end])
                 }
 
+                // precalc hash table for cost estimation
+
+                nodeToNodeTime = {}
+
+                for(var i in edges)
+                {
+                    var edge = edges[i];
+
+                    // find forward route
+                    var fwdCost = null;
+                    var backCost = null;
+                    for(var k in edgeCosts)
+                    {
+                        var edgeCost = edgeCosts[k]
+                        if ((edge[0] === edgeCost[0] || (isHubPad(edge[0]) && hubOfPad(edge[0]) === edgeCost[0])) &&
+                            (edge[1] === edgeCost[1] || (isHubPad(edge[1]) && hubOfPad(edge[1]) === edgeCost[1])))
+                        {
+                            fwdCost = edgeCost[2];
+                        }
+
+                        if ((edge[0] === edgeCost[1] || (isHubPad(edge[0]) && hubOfPad(edge[0]) === edgeCost[1])) &&
+                            (edge[1] === edgeCost[0] || (isHubPad(edge[1]) && hubOfPad(edge[1]) === edgeCost[0])))
+                        {
+                            backCost = edgeCost[2];
+                        }
+
+                        if (fwdCost !== null && backCost !== null)
+                        {
+                            break;
+                        }
+                    }
+
+                    if (backCost === null)
+                    {
+                        backCost = fwdCost
+                    }
+                    else if (fwdCost === null)
+                    {
+                        fwdCost = backCost;
+                    }
+
+                    if (backCost === null && fwdCost === null)
+                    {
+                        console.warn("no cost time between '" + edge[0] + "' and '" + edge[1] + "', assuming 0");
+                        backCost = 0;
+                        fwdCost = 0;
+                    }
+
+                    nodeToNodeTime[edge[0] + "-" + edge[1]] = fwdCost;
+                    nodeToNodeTime[edge[1] + "-" + edge[0]] = backCost;
+                }
+
+                for(var i in transfers)
+                {
+                    var transfer = transfers[i];
+
+                    // find forward route
+                    var fwdCost = null;
+                    for(var k in transferCosts)
+                    {
+                        var transferCost = transferCosts[k]
+                        if (transferCost[0] === transfer[0] &&
+                            transferCost[1] === transfer[1])
+                        {
+                            fwdCost = transferCost[2];
+                            break;
+                        }
+                    }
+
+                    // find backward route
+                    var backCost = null;
+                    for(var k in transferCosts)
+                    {
+                        var transferCost = transferCosts[k]
+                        if (transferCost[0] === transfer[1] &&
+                            transferCost[1] === transfer[0])
+                        {
+                            backCost = transferCost[2];
+                            break;
+                        }
+                    }
+
+                    if (backCost === null)
+                    {
+                        backCost = fwdCost
+                    }
+                    else if (fwdCost === null)
+                    {
+                        fwdCost = backCost;
+                    }
+
+                    if (backCost === null && fwdCost === null)
+                    {
+                        console.warn("no cost time between '" + transfer[0] + "' and '" + transfer[1] + "', assuming 0");
+                        backCost = 0;
+                        fwdCost = 0;
+                    }
+
+                    nodeToNodeTime[transfer[0] + "-" + transfer[1]] = fwdCost;
+                    nodeToNodeTime[transfer[1] + "-" + transfer[0]] = backCost;
+                }
 
                 // run first iteration
 
